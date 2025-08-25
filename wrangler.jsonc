@@ -14,7 +14,6 @@
         "enabled": true,
         "head_sampling_rate": 1
     },
-    {
     "kv_namespaces": [
         {
             "binding": "MY_KV",
@@ -22,7 +21,6 @@
             "preview_id": "26ecf2ccf69b420cb1e4fda2791a223a"
         }
     ]
-}
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement

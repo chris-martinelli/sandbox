@@ -7,7 +7,10 @@ export default {
       switch (path) {
         case '/':
           return new Response(getEducationalHomePage(), {
-            headers: { 'Content-Type': 'text/html' },
+            headers: { 
+              'Content-Type': 'text/html; charset=utf-8',
+              'Cache-Control': 'no-cache'
+            },
           });
 
         case '/kv-test':
@@ -42,6 +45,8 @@ function getEducationalHomePage() {
 <html>
 <head>
     <title>Cloudflare Workers KV Learning Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body { 
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 

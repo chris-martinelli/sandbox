@@ -6,6 +6,12 @@
     "$schema": "node_modules/wrangler/config-schema.json",
     "name": "sandbox",
     "compatibility_date": "2025-08-20",
+    "routes": [
+        {
+            "pattern": "shop.example.com",
+            "custom_domain": true
+        }
+    ],
     "main": "src/index.js",
     "placement": {
         "mode": "smart"
